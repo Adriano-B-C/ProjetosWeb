@@ -1,0 +1,178 @@
+body {
+  overflow: hidden;
+  background-color: lightgray;
+}
+.tituloFundo {
+  position: absolute;
+  top: 42%;
+  left: 37%;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: xx-large;
+  user-select: none;
+}
+/* Utilizado para dar estilo ao menu como um todo */
+.menuWrap {
+  font-family: 'DotGothic16', sans-serif;
+  /* Display é definido como 'none', para que o menu esteja "invisivel" */
+  display: none;
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  /* Se desejado, o formato do menu pode ser alterado */
+  border-radius: 50%;
+  color: black;
+  /* Para criar a ilusão de circulo, o resto dos poligonos são escondidos como 'overflow' */
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Usado para alterar todos os itens */
+.menuWrap .item {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cada letra representa um poligono, se iniciando no canto superior esquerdo, e seguindo em sentido-horário */
+.a {
+  position: absolute;
+  background-color: #ff0000;
+  height: 50%;
+  width: 50%;
+  display: block;
+  /* O formato de cada item é definido por meio de 'clip-path', neste caso (6 itens), poligonos trilaterais são utilizados, entretanto, é possível criar outros formatos para acomodar outras quantidades de itens */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+  top: 0%;
+  right: 50%;
+}
+/* Selecionador usado para cada valor descrito nos itens */
+.valor-a {
+  position: absolute;
+  margin: 0;
+  top: 30%;
+  right: 20%;
+}
+
+.b {
+  position: absolute;
+  background-color: #ff8700;
+  height: 50%;
+  width: 50%;
+  top: 0;
+  right: 0;
+  clip-path: polygon(0 0, 100% 0%, 0% 100%);
+}
+.valor-b {
+  position: absolute;
+  margin: 0;
+  top: 30%;
+  left: 20%;
+}
+
+.c {
+  position: absolute;
+  background-color: #ffd300;
+  height: 50%;
+  width: 50%;
+  right: 0;
+  top: 0;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+}
+.valor-c {
+  position: absolute;
+  margin: 0;
+  bottom: 13%;
+  left: 50%;
+}
+
+.d {
+  position: absolute;
+  background-color: #f04cd8;
+  height: 50%;
+  width: 50%;
+  right: 0%;
+  top: 50%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+.valor-d {
+  position: absolute;
+  margin: 0;
+  top: 11%;
+  left: 53%;
+}
+
+.e {
+  position: absolute;
+  background-color: #a1ff0a;
+  height: 50%;
+  width: 50%;
+  right: 0%;
+  top: 50%;
+  clip-path: polygon(0% 100%, 0% 0%, 100% 100%);
+}
+.valor-e {
+  position: absolute;
+  margin: 0;
+  bottom: 30%;
+  left: 20%;
+}
+
+.f {
+  position: absolute;
+  background-color: #0aff99;
+  height: 50%;
+  width: 50%;
+  right: 50%;
+  top: 50%;
+  clip-path: polygon(100% 100%, 0% 100%, 100% 0%);
+}
+.valor-f {
+  position: absolute;
+  margin: 0;
+  bottom: 30%;
+  right: 20%;
+}
+
+.g {
+  position: absolute;
+  background-color: #147df5;
+  height: 50%;
+  width: 50%;
+  right: 50%;
+  top: 50%;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+}
+.valor-g {
+  position: absolute;
+  margin: 0;
+  top: 9%;
+  left: 45%;
+}
+
+.h {
+  position: absolute;
+  background-color: #580aff;
+  height: 50%;
+  width: 50%;
+  display: block;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+  top: 0%;
+  right: 50%;
+}
+.valor-h {
+  position: absolute;
+  margin: 0;
+  bottom: 10%;
+  left: 45%;
+}
+
+/* Comportamento do item selecionado, apresenta uma transição com aumento da fonte, mudança de cor, e sombreado "Neon" */
+.item:hover {
+  transition: all 200ms linear;
+  color: white;
+  background-color: black;
+  font-size: 1.1em;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+}
