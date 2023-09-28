@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+  overflow: hidden;
+  background: #fff;
+  background: #43399f;
+  background: linear-gradient(to top right, #43399f 0%, #52c6cb 100%);
+  color: #333;
+  font-family: "Oswald", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+  color: #fff;
+}
+
+.nums {
+  position: relative;
+  width: 100%;
+  height: 5.5em;
+}
+
+.num1 {
+  position: absolute;
+}
+
+.trace {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  z-index: 3;
+  width: 1.5em;
+  height: 5.2em;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 4px 8px 16px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tip {
+  position: absolute;
+  top: 0.45em;
+  right: -1.8em;
+  z-index: 1;
+  background-color: #fff;
+  width: 2.2em;
+  height: 1.2em;
+  border-radius: 4px;
+  transform: rotate(-35deg);
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+.num0 {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  border: 1.4em solid #fff;
+  border-radius: 50%;
+  box-shadow: 4px 8px 16px 2px rgba(0, 0, 0, 0.25);
+}
+
+.right {
+  z-index: 1;
+  right: 0;
+  top: 0;
+}
+
+.left {
+  z-index: 2;
+  right: 4.2em;
+}
+
+.days {
+  font-size: 5.2em;
+  line-height: 0.9em;
+  letter-spacing: 0.06em;
+}
+
+.lastLine {
+  font-size: 1.7em;
+  letter-spacing: 0.04em;
+}
