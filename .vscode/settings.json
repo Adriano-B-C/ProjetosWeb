@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "/c:/Projetos Programação/Cursos-E-Estudos/Cod3r/WebModerno/css": true,
+    "/c:/Projetos Programação/Cursos-E-Estudos/Cod3r/WebModerno/desafios": true,
+    "/c:/Projetos Programação/Cursos-E-Estudos/Cod3r/WebModerno/desafios/desafio1.js": true,
+    "**/fundamentos": true
+  }
+}
